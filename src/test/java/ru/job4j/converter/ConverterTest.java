@@ -15,15 +15,13 @@ class ConverterTest {
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
 
-    public static float rubleToDollar(float value) {
-        return value / 60;
-    }
+    @Test
+    void whenConvert140RblThen2Euro() {
+        float input = 140;
+        float expected = 2;
+        float output = Converter.rubleToEuro(input);
+        float value = 0.0001f;
+        assertThat(output).isEqualTo(expected, withPrecision(value));
 
-    public static void main(String[] args) {
-        float in = 180;
-        float expected = 3;
-        float out = Converter.rubleToDollar(in);
-        boolean passed = expected == out;
-        System.out.println("180 rubles are 3. Test result : " + passed);
     }
 }
