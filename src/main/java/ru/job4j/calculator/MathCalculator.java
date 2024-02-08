@@ -5,21 +5,24 @@ import static ru.job4j.math.MathFunction.*;
 public class MathCalculator {
 
     public static double sumAndMultiply(double first, double second) {
-        return ru.job4j.math.MathFunction.sum(first, second)
-                + ru.job4j.math.MathFunction.multiply(first, second);
+        return sum(first, second) + multiply(first, second);
+    }
+
+    public static double minusAndDiv(double first, double second) {
+        return minus(first, second) + div(first, second);
+    }
+
+    public static double sumAll(double first, double second) {
+      return sum(first, second)
+              + multiply(first, second)
+              + minus(first, second)
+              + div(first, second);
     }
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-
-            int one = 4;
-            int two = 2;
-            int oneMinusTwo = one - two;
-            System.out.println(oneMinusTwo);
-            int ten = 10;
-            int five = 5;
-            int tenDivFive = ten / five;
-            System.out.println(tenDivFive);
+        System.out.println("Результат расчета равен: " + minusAndDiv(10, 20));
+        System.out.println("Результат расчета равен: " + sumAll(10, 20));
     }
 }
 
