@@ -1,0 +1,17 @@
+package ru.job4j.condition;
+
+public class X5 {
+    public static int calc(int a, int b, int c, int x) {
+        return a * x * x + b * x + c;
+
+    }
+
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 1;
+        int c = 0;
+        int x = 1;
+        int result3 = X5.calc(a, b, c, x);
+        System.out.println(result3);
+    }
+}
