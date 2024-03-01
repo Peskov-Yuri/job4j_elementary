@@ -38,7 +38,7 @@ class PointTest {
     }
 
     @Test
-    void whenMinus2Minus1to41then6() {
+    void whenMinus2Minus1to41then6f() {
         double expected = 6.32;
         int x1 = -2;
         int y1 = -1;
