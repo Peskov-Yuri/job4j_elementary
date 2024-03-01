@@ -16,8 +16,8 @@ class PointTest {
     }
 
     @Test
-    void when14to33then2() {
-        double expected = 2.23606797749979;
+    void when14to33then2f() {
+        double expected = 2.23;
         int x1 = 1;
         int y1 = 4;
         int x2 = 3;
@@ -31,6 +31,17 @@ class PointTest {
         double expected = 2;
         int x1 = 2;
         int y1 = 1;
+        int x2 = 4;
+        int y2 = 1;
+        double output = Point.distance(x1, y1, x2, y2);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void whenMinus2Minus1to41then6() {
+        double expected = 6.32;
+        int x1 = -2;
+        int y1 = -1;
         int x2 = 4;
         int y2 = 1;
         double output = Point.distance(x1, y1, x2, y2);
