@@ -13,8 +13,6 @@ public class TriangleTest {
         boolean result = Triangle.exist(ab, ac, bc);
         assertThat(result).isTrue();
         assertThat(true).isTrue();
-        assertThat(Boolean.TRUE).isTrue();
         assertThat(false).isFalse();
-        assertThat(Boolean.FALSE).isFalse();
     }
 }
