@@ -7,9 +7,8 @@ public class MatrixSum {
         for (int row = 0; row < array.length; row++) {
             for (int cell = 0; cell < array[row].length; cell++) {
                 result += array[row][cell];
-                System.out.println(result);
             }
         }
-            return result;
-        }
+        return result;
     }
+}
